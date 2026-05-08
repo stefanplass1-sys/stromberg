@@ -1,0 +1,30 @@
+# --- Maven ---
+app/target/
+**/target/
+
+# --- Vaadin / Frontend (alles generiert) ---
+app/node_modules/
+app/package.json
+app/package-lock.json
+app/tsconfig.json
+app/types.d.ts
+app/vite.config.ts
+app/vite.generated.ts
+app/src/main/frontend/generated/
+
+# --- Logs / Laufzeit ---
+*.log
+app/server.log
+
+# --- IDEs ---
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Temp ---
+/tmp/
+*.bak

@@ -1,0 +1,25 @@
+# Generierte Build-Artefakte
+app/target/
+app/node_modules/
+app/src/main/frontend/generated/
+app/package.json
+app/package-lock.json
+app/tsconfig.json
+app/types.d.ts
+app/vite.config.ts
+app/vite.generated.ts
+app/server.log
+
+# Design-Bundle und Dokumente werden im Container nicht gebraucht
+stromberg/
+spec.md
+CLAUDE.md
+README.md
+.git/
+.idea/
+.vscode/
+
+*.log
+*.iml
+.DS_Store
+Thumbs.db

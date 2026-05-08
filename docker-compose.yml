@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    image: stromberg-spruch:dev
+    container_name: stromberg-spruch-des-tages
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_TOOL_OPTIONS=-XX:+UseContainerSupport
+    # Maven- und npm-Caches persistieren, damit Folgestarts schnell sind
+    volumes:
+      - maven-cache:/root/.m2
+      - frontend-cache:/workspace/node_modules
+
+volumes:
+  maven-cache:
+  frontend-cache:
