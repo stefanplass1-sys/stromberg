@@ -377,7 +377,7 @@ public class SpruchDesTagesView extends VerticalLayout {
 
         actionLabel.addClassName("actionbar-label");
 
-        Button weiter = new Button("Nächstes Sprüchlein ›", e -> zeigeSpruch(service.nachfolgerVon(aktuell)));
+        Button weiter = new Button("Zack noch mal", e -> zeigeSpruch(service.nachfolgerVon(aktuell)));
         weiter.addClassName("actionbar-btn");
 
         Button heutiger = new Button("Zurück zum Spruch des Tages", e -> zeigeSpruch(tagesSpruch));
